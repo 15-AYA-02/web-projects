@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("assets/background.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #1e1e1e;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.mirror-zone {
+  margin: 20px 0;
+}
+
+.mirror {
+  width: 150px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.mirror:hover {
+  transform: scale(1.1) rotate(1deg);
+}
+
+#skill-box {
+  margin-top: 30px;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+#skill-name {
+  font-size: 1.6em;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+}
+
+#skill-quote {
+  font-style: italic;
+  color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
