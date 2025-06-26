@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("assets/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Georgia', serif;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.garden {
+  padding: 60px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  color: #4a3e2a;
+}
+
+.instruction {
+  font-style: italic;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.garden-area {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.flower, .tree {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.flower:hover, .tree:hover {
+  transform: scale(1.2) rotate(3deg);
+}
+
+#haiku-box {
+  margin-top: 40px;
+  background-color: rgba(255, 248, 220, 0.9);
+  border-radius: 12px;
+  display: inline-block;
+  padding: 20px 30px;
+  max-width: 400px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+#haiku-text {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: #3c2f1e;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}

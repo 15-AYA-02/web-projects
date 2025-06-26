@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haiku Garden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="garden">
+    <h1>Haiku Garden 🌸</h1>
+    <p class="instruction">Click a flower to reveal a haiku...</p>
+    
+    <div class="garden-area">
+      <img src="assets/flower.png" class="flower" onclick="revealHaiku(this)">
+      <img src="assets/tree.png" class="tree" onclick="revealHaiku(this)">
+      <img src="assets/sakura.png" class="flower" onclick="revealHaiku(this)">
+    </div>
+    
+    <div id="haiku-box" class="hidden">
+      <p id="haiku-text"></p>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
