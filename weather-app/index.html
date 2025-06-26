@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+            <div class="search">
+                <input type="text" placeholder="entrez la ville" spellcheck="false">
+                <button><img src="pictures\search.png"></button>
+            </div>
+            <div class="error">
+                <p>Invalid city name</p>
+            </div>
+            <div class="weather">
+                <img src="pictures/rainy.png" class="weather-icone">
+                <h1 class="temperature">18°C</h1>
+                <h2 class="ville">Oujda</h2>
+                <div class="details">
+                    <div class="col">
+                        <br>
+                        <img src="pictures/humidity.png" width="120" height="120">
+                        <div>
+                            <p class="humidity">80%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <br></b>
+                        <img src="pictures/windy.png" width="120" height="120">
+                        <div>
+                            <p class="wind">15 km/h</p>
+                            <p>vitesse du vent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
